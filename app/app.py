@@ -118,17 +118,6 @@ if st.button('Analyze Sentiment ', use_container_width=True):
         else:
             st.markdown('<div class="negative">😞 Negative Sentiment</div>', unsafe_allow_html=True)
             
-        # Add some additional feedback
-        st.markdown("---")
-        if prediction == 'positive':
-            st.markdown("### 💡 Tips for Positive Reviews:")
-            st.markdown("- Consider what made this experience positive")
-            st.markdown("- Share specific details that stood out")
-        else:
-            st.markdown("### 💡 Improving Negative Experiences:")
-            st.markdown("- Identify specific pain points mentioned")
-            st.markdown("- Consider how these issues could be addressed")
-
 # Add some information about sentiment analysis
 with st.expander("ℹ️ About our LSTM Sentiment Analysis model"):
     st.markdown("""
